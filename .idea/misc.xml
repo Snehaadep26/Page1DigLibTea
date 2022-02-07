@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/Sneha/AndroidStudioProjects/Page1DigLibTea/app/src/main/res/layout/activity_2main.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/Sneha/AndroidStudioProjects/Page1DigLibTea/app/src/main/res/layout/activity_main.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/Sneha/AndroidStudioProjects/Page1DigLibTea/app/src/main/res/layout/activity_mainp1.xml" value="0.1" />
+        <entry key="..\:/Users/Sneha/AndroidStudioProjects/Page1DigLibTea/app/src/main/res/layout/activity_mainp2.xml" value="0.18" />
+        <entry key="..\:/Users/Sneha/AndroidStudioProjects/Page1DigLibTea/app/src/main/res/layout/activity_mainp3.xml" value="0.18" />
+        <entry key="..\:/Users/Sneha/AndroidStudioProjects/Page1DigLibTea/app/src/main/res/layout/activity_mainp4.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/Sneha/AndroidStudioProjects/Page1DigLibTea/app/src/main/res/layout/card1.xml" value="0.15" />
+        <entry key="..\:/Users/Sneha/AndroidStudioProjects/Page1DigLibTea/app/src/main/res/layout/card1hori.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/Sneha/AndroidStudioProjects/Page1DigLibTea/app/src/main/res/layout/card1hori2.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/Sneha/AndroidStudioProjects/Page1DigLibTea/app/src/main/res/layout/card1horip4.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/Sneha/AndroidStudioProjects/Page1DigLibTea/app/src/main/res/layout/card1verp4.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/Sneha/AndroidStudioProjects/Page1DigLibTea/app/src/main/res/layout/card1verti.xml" value="0.48333333333333334" />
+        <entry key="..\:/Users/Sneha/AndroidStudioProjects/Page1DigLibTea/app/src/main/res/layout/card1verti2.xml" value="0.1" />
+        <entry key="..\:/Users/Sneha/AndroidStudioProjects/Page1DigLibTea/app/src/main/res/layout/card2.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/Sneha/AndroidStudioProjects/Page1DigLibTea/app/src/main/res/layout/cardhori1p3.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/Sneha/AndroidStudioProjects/Page1DigLibTea/app/src/main/res/layout/cardver1p3.xml" value="0.203125" />
+        <entry key="..\:/Users/Sneha/AndroidStudioProjects/Page1DigLibTea/app/src/main/res/layout/firstfragment.xml" value="0.203125" />
+        <entry key="..\:/Users/Sneha/AndroidStudioProjects/Page1DigLibTea/app/src/main/res/layout/fragment_fifth.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/Sneha/AndroidStudioProjects/Page1DigLibTea/app/src/main/res/layout/fragment_first2.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/Sneha/AndroidStudioProjects/Page1DigLibTea/app/src/main/res/layout/fragment_fourth.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/Sneha/AndroidStudioProjects/Page1DigLibTea/app/src/main/res/layout/fragment_second.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/Sneha/AndroidStudioProjects/Page1DigLibTea/app/src/main/res/layout/fragment_third.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/Sneha/AndroidStudioProjects/Page1DigLibTea/app/src/main/res/layout/recentlecnotescard.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/Sneha/AndroidStudioProjects/Page1DigLibTea/app/src/main/res/layout/recentquebankcard.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/Sneha/AndroidStudioProjects/Page1DigLibTea/app/src/main/res/layout/recentvideocard.xml" value="0.33" />
+        <entry key="..\:/Users/Sneha/AndroidStudioProjects/Page1DigLibTea/app/src/main/res/layout/recentview_card.xml" value="0.5131195335276968" />
+        <entry key="..\:/Users/Sneha/AndroidStudioProjects/Page1DigLibTea/app/src/main/res/menu/bottom_menu.xml" value="0.20416666666666666" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

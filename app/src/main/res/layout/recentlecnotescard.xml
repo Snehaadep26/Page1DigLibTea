@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="390dp"
+    android:layout_height="116dp"
+android:layout_margin="4dp"
+    android:layout_marginStart="8dp"
+    android:layout_marginEnd="8dp"
+    app:cardCornerRadius="5dp"
+    android:background="#FFFFFF"
+    app:cardElevation="5dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/recentImgp2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:layout_marginStart="24dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.333">
+
+        </ImageView>
+
+        <TextView
+            android:id="@+id/organiChemTextp2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:fontFamily="@font/roboto_bold"
+            android:textColor="#191919"
+            android:textSize="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.226"
+            app:layout_constraintStart_toEndOf="@+id/recentImgp2"
+            app:layout_constraintTop_toTopOf="parent">
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/reactionTextp2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:textColor="#636363"
+            android:textSize="12dp"
+            android:fontFamily="@font/roboto"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/organiChemTextp2"
+            app:layout_constraintTop_toBottomOf="@+id/organiChemTextp2">
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/chemistTextp2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:textColor="#AEAEAE"
+            android:textSize="10dp"
+            android:fontFamily="@font/roboto"
+            app:layout_constraintStart_toStartOf="@+id/reactionTextp2"
+            app:layout_constraintTop_toBottomOf="@+id/reactionTextp2">
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/textView4p2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="12dp"
+            android:text="\u25CF"
+            android:textColor="#AEAEAE"
+
+            app:layout_constraintBottom_toBottomOf="@+id/chemistTextp2"
+            app:layout_constraintStart_toEndOf="@+id/chemistTextp2"
+            app:layout_constraintTop_toTopOf="@+id/chemistTextp2">
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/recentclassTextp2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:fontFamily="@font/roboto"
+            android:textColor="#AEAEAE"
+            android:textSize="10dp"
+            app:layout_constraintBottom_toBottomOf="@+id/textView4p2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.141"
+            app:layout_constraintStart_toEndOf="@+id/chemistTextp2"
+            app:layout_constraintTop_toBottomOf="@+id/reactionTextp2"
+            app:layout_constraintVertical_bias="0.0">
+
+        </TextView>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>

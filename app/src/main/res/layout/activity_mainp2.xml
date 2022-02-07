@@ -1,0 +1,393 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivityP2">
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomNavigationViewp2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:menu="@menu/bottom_menu"
+        >
+
+
+    </com.google.android.material.bottomnavigation.BottomNavigationView>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/bottomNavigationViewp2"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="4dp"
+        android:layout_marginBottom="4dp">
+
+        <ScrollView
+            android:id="@+id/scrollMainp2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#FAFAFA"
+            tools:context=".MainActivity">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/constMainp2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+
+                <androidx.appcompat.widget.Toolbar
+                    android:id="@+id/toolbarp2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:title="Digital Library"
+                    tools:ignore="MissingConstraints">
+
+
+                </androidx.appcompat.widget.Toolbar>
+
+                <ImageButton
+                    android:id="@+id/notificationImgp2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="20dp"
+                    android:background="@color/white"
+                    android:src="@drawable/ic_notifications"
+                    app:layout_constraintBottom_toBottomOf="@+id/toolbarp2"
+                    app:layout_constraintEnd_toStartOf="@+id/aulasImgp2"
+                    app:layout_constraintTop_toTopOf="@+id/toolbarp2"
+                    app:layout_constraintVertical_bias="0.4">
+
+                </ImageButton>
+
+                <ImageButton
+                    android:id="@+id/aulasImgp2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="36dp"
+                    android:background="@color/white"
+                    android:src="@drawable/aulaslogo"
+                    app:layout_constraintBottom_toBottomOf="@+id/toolbarp2"
+                    app:layout_constraintEnd_toEndOf="@+id/toolbarp2"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.454">
+
+                </ImageButton>
+
+                <TextView
+                    android:id="@+id/overallTextp2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="12dp"
+                    android:layout_marginTop="12dp"
+                    android:fontFamily="@font/roboto_bold"
+                    android:text="Overall stats"
+                    android:textColor="#191919"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/toolbarp2">
+
+                </TextView>
+
+                <ScrollView
+                    android:id="@+id/scrollview1p2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/overallTextp2"
+                    tools:ignore="MissingConstraints">
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        app:layout_constraintTop_toBottomOf="@+id/scrollview1p2">
+
+                        <androidx.recyclerview.widget.RecyclerView
+                            android:id="@+id/recyler1p2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintHorizontal_bias="0.0"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent">
+
+                        </androidx.recyclerview.widget.RecyclerView>
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                </ScrollView>
+
+                <TextView
+                    android:id="@+id/recentTextp2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="12dp"
+                    android:layout_marginTop="24dp"
+                    android:fontFamily="@font/roboto_bold"
+                    android:text="Recently added lecture notes"
+                    android:textColor="#191919"
+                    android:textSize="16dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.008"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/scrollview1p2">
+
+                </TextView>
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/recyclerRecentp2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    app:layout_constraintTop_toBottomOf="@+id/recentTextp2"
+                    tools:layout_editor_absoluteX="-2dp"
+                    tools:ignore="MissingConstraints">
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/recentRecyclerp2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.0"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent">
+
+                    </androidx.recyclerview.widget.RecyclerView>
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <TextView
+                    android:id="@+id/recentVidTextp2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="12dp"
+                    android:text="Recently added videos"
+
+                    android:layout_marginTop="16dp"
+                    android:fontFamily="@font/roboto_bold"
+                    android:textColor="#191919"
+                    android:textSize="16dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/recyclerRecentp2">
+
+                </TextView>
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/constVidp2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/recentVidTextp2">
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/recntVidRecyp2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent">
+
+                    </androidx.recyclerview.widget.RecyclerView>
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <TextView
+                    android:id="@+id/queBankTextP2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:fontFamily="@font/roboto_bold"
+                    android:text="Recently added question banks"
+
+                    android:textColor="#191919"
+                    android:textSize="16dp"
+
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.057"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/constVidp2">
+
+                </TextView>
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/constQueBP2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/queBankTextP2">
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/RecyclerqueBankP2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent">
+
+                    </androidx.recyclerview.widget.RecyclerView>
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <TextView
+                    android:id="@+id/allClassTextp2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="12dp"
+                    android:layout_marginTop="32dp"
+                    android:fontFamily="@font/roboto_bold"
+                    android:text="All classes"
+                    android:textColor="#191919"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/constQueBP2"
+                    tools:ignore="MissingConstraints">
+
+                </TextView>
+
+                <TextView
+                    android:id="@+id/tenTextp2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="12dp"
+                    android:layout_marginTop="12dp"
+                    android:fontFamily="@font/roboto_bold"
+                    android:text="10th Standard"
+                    android:textColor="#191919"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/allClassTextp2">
+
+                </TextView>
+
+                <ScrollView
+                    android:id="@+id/scrollviewp2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/tenTextp2"
+                    tools:ignore="MissingConstraints">
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:layout_constraintTop_toBottomOf="@+id/scrollviewp2">
+
+                        <androidx.recyclerview.widget.RecyclerView
+                            android:id="@+id/recylerp2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent">
+
+                        </androidx.recyclerview.widget.RecyclerView>
+
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                </ScrollView>
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/const1p2"
+                    app:layout_constraintTop_toBottomOf="@+id/scrollviewp2"
+                    app:layout_constraintVertical_bias="1.0"
+                    tools:ignore="MissingConstraints"
+                    tools:layout_editor_absoluteX="3dp">
+
+                    <TextView
+                        android:id="@+id/textViewp2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="12dp"
+                        android:fontFamily="@font/roboto_bold"
+                        android:text="11th Standard"
+                        android:textColor="#191919"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.043"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent">
+
+                    </TextView>
+
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/recyler4p2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="12dp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.0"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/textViewp2">
+
+                    </androidx.recyclerview.widget.RecyclerView>
+
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintBottom_toBottomOf="@id/constMainp2"
+                    app:layout_constraintTop_toBottomOf="@+id/const1p2"
+                    app:layout_constraintVertical_bias="1.0"
+                    tools:ignore="MissingConstraints"
+                    tools:layout_editor_absoluteX="187dp">
+
+
+                    <TextView
+                        android:id="@+id/tweletextp2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="16dp"
+                        android:fontFamily="@font/roboto_bold"
+                        android:text="12th Standard"
+                        android:textColor="#191919"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.045"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        tools:ignore="NotSibling">
+
+                    </TextView>
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/recyler5p2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.0"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/tweletextp2">
+
+                    </androidx.recyclerview.widget.RecyclerView>
+
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </ScrollView>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</RelativeLayout>
